@@ -1,7 +1,7 @@
 2013
 ====
 
-Clang，Array &amp;pointer boundary checking，The runtime validation
+  Array bounds overflow，runtime verification，program instrumentation
 
-  Buffer overflow attacks are one of the commonest methods for attackers to break into systems.Array & pointer boundary checking is one of the most effective approaches for defending against buffer overflow attacks.many people have Put forward lots of motheds to achieve it.Now I also make full use of clang and complete the detection of many pointer and array access errors.My method  is a dynamic checking,that is to say checking the buffer overflow vulnerabilities by executing programs with specific inputs.Instrunctions are added to check the bounds of arrays and pointers at runtime. 
+  Buffer overflow can cause very serious security problems and bring serious threats to networks and distributed systems such as clusters, Grids, P2P systems. Array bounds overflow is an important instance of buffer overflow. How to check array bounds overflow is an important and meaningful issue. In this paper, we present a runtime verification method for checking array bounds overflow. At first, we analyze the various classes of array bounds overflow errors. Based on the classification, we investigate the various verification methods. After that, we study the algorithms for dynamic checking of array bounds overflow based on program instrumentation. We implement the algorithms based on the open source compiler Clang. The experimental results show that our method is feasible and efficient.
   test*.c is some codes for testing.
