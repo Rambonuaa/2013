@@ -39,17 +39,13 @@ int interfunc()
 void func2(char *p)
 {
    printf("%c\n",*(p+3));
-   *--p='\0';
    *p='\n';
-   *p++='c';
    printf("%c\n",*p);
 }
 void func3(int *p)
 {
    printf("%d\n",*(p+3));
-   *--p=3;
    *p=2;
-   *p++=1;
    printf("%d\n",*p);
 }
 
