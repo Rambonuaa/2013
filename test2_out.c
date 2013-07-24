@@ -40,17 +40,13 @@ int interfunc()
 void func2(int p_size,char *p)
 {
    printf("%c\n",*(char *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),41,19,(void *)(p+3))));
-   *(char *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),42,5,(void *)--p))='\0';
    *(char *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),43,5,(void *)p))='\n';
-   *(char *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),44,5,(void *)p++))='c';
    printf("%c\n",*(char *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),45,19,(void *)p)));
 }
 void func3(int p_size,int *p)
 {
    printf("%d\n",*(int *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),49,19,(void *)(p+3))));
-   *(int *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),50,5,(void *)--p))=3;
    *(int *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),51,5,(void *)p))=2;
-   *(int *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),52,5,(void *)p++))=1;
    printf("%d\n",*(int *)(_RV_insert_pointer_check((void *)p,(void *)(p+p_size-1),53,19,(void *)p)));
 }
 
