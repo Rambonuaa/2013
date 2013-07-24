@@ -1,3 +1,4 @@
 this is an program to detect all pointer and array access errors.
+test_out.c is an output program when test.c as an input.
 the version of LLVM is 3.1.
 It is updating!
